@@ -1,0 +1,15 @@
+D:\StudyCS\TH2.1\TH2.1\bin\Debug\net8.0\TH2.1.exe
+D:\StudyCS\TH2.1\TH2.1\bin\Debug\net8.0\TH2.1.deps.json
+D:\StudyCS\TH2.1\TH2.1\bin\Debug\net8.0\TH2.1.runtimeconfig.json
+D:\StudyCS\TH2.1\TH2.1\bin\Debug\net8.0\TH2.1.dll
+D:\StudyCS\TH2.1\TH2.1\bin\Debug\net8.0\TH2.1.pdb
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.GeneratedMSBuildEditorConfig.editorconfig
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.AssemblyInfoInputs.cache
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.AssemblyInfo.cs
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.csproj.CoreCompileInputs.cache
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.sourcelink.json
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.dll
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\refint\TH2.1.dll
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.pdb
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\TH2.1.genruntimeconfig.cache
+D:\StudyCS\TH2.1\TH2.1\obj\Debug\net8.0\ref\TH2.1.dll

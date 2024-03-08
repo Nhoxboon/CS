@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\TH2\\TH2\\TH2.csproj": {}
+    "D:\\StudyCS\\TH2\\TH2\\TH2.csproj": {}
   },
   "projects": {
-    "D:\\C#\\TH2\\TH2\\TH2.csproj": {
+    "D:\\StudyCS\\TH2\\TH2\\TH2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\TH2\\TH2\\TH2.csproj",
+        "projectUniqueName": "D:\\StudyCS\\TH2\\TH2\\TH2.csproj",
         "projectName": "TH2",
-        "projectPath": "D:\\C#\\TH2\\TH2\\TH2.csproj",
+        "projectPath": "D:\\StudyCS\\TH2\\TH2\\TH2.csproj",
         "packagesPath": "C:\\Users\\fptsh\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\TH2\\TH2\\obj\\",
+        "outputPath": "D:\\StudyCS\\TH2\\TH2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,15 @@
+D:\StudyCS\Th3\Th3\bin\Debug\net8.0\Th3.exe
+D:\StudyCS\Th3\Th3\bin\Debug\net8.0\Th3.deps.json
+D:\StudyCS\Th3\Th3\bin\Debug\net8.0\Th3.runtimeconfig.json
+D:\StudyCS\Th3\Th3\bin\Debug\net8.0\Th3.dll
+D:\StudyCS\Th3\Th3\bin\Debug\net8.0\Th3.pdb
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.GeneratedMSBuildEditorConfig.editorconfig
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.AssemblyInfoInputs.cache
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.AssemblyInfo.cs
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.csproj.CoreCompileInputs.cache
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.sourcelink.json
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.dll
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\refint\Th3.dll
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.pdb
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\Th3.genruntimeconfig.cache
+D:\StudyCS\Th3\Th3\obj\Debug\net8.0\ref\Th3.dll
