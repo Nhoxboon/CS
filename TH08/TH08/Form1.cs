@@ -13,7 +13,7 @@ namespace TH08
 {
     public partial class Form1 : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-GLH3U47;Initial Catalog=Test1;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-GLH3U47;Initial Catalog=QuanLySinhVienDB;Integrated Security=True");
         
         public Form1()
         {
@@ -64,6 +64,127 @@ namespace TH08
             }
         }
 
+        //Thêm
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConnection.Open();
+                string query = "INSERT INTO SinhVien (MaSV, HoTen, NgaySinh, NoiSinh, GioiTinh) VALUES (@MaSV, @HoTen, @NgaySinh, @NoiSinh, @GioiTinh)";
+                SqlCommand cmd = new SqlCommand(query, sqlConnection);
+                cmd.Parameters.AddWithValue("@MaSV", textBox4.Text);
+                cmd.Parameters.AddWithValue("@HoTen", textBox3.Text);
+                cmd.Parameters.AddWithValue("@NgaySinh", dateTimePicker2.Value);
+                cmd.Parameters.AddWithValue("@NoiSinh", comboBox2.Text);
+                cmd.Parameters.AddWithValue("@GioiTinh", radioButton3.Checked);
+                
 
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công!");
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+        }
+
+        //Sửa
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                try
+                {
+                    sqlConnection.Open();
+                    string query = "UPDATE SinhVien SET HoTen = @HoTen, NgaySinh = @NgaySinh, NoiSinh = @NoiSinh, GioiTinh = @GioiTinh WHERE MaSV = @MaSV";
+                    SqlCommand cmd = new SqlCommand(query, sqlConnection);
+                    cmd.Parameters.AddWithValue("@MaSV", textBox4.Text);
+                    cmd.Parameters.AddWithValue("@HoTen", textBox3.Text);
+                    cmd.Parameters.AddWithValue("@NgaySinh", dateTimePicker2.Value);
+                    cmd.Parameters.AddWithValue("@NoiSinh", comboBox2.Text);
+                    cmd.Parameters.AddWithValue("@GioiTinh", radioButton3.Checked);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Sửa thành công!");
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi sửa dữ liệu: " + ex.Message);
+                }
+                finally
+                {
+                    sqlConnection.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một sinh viên để sửa.");
+            }
+        }
+
+        //Xóa
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // Xóa dòng dữ liệu đang chọn
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                try
+                {
+                    sqlConnection.Open();
+                    string maSV = dataGridView1.SelectedRows[0].Cells["MaSV"].Value.ToString();
+                    string query = "DELETE FROM SinhVien WHERE MaSV = @MaSV";
+                    SqlCommand cmd = new SqlCommand(query, sqlConnection);
+                    cmd.Parameters.AddWithValue("@MaSV", maSV);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Xóa thành công!");
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi xóa dữ liệu: " + ex.Message);
+                }
+                finally
+                {
+                    sqlConnection.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một sinh viên để xóa.");
+            }
+        }
+
+        //Lọc
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConnection.Open();
+                string query = "SELECT * FROM SinhVien WHERE MaSV = @MaSV OR NoiSinh = @NoiSinh";
+                SqlCommand cmd = new SqlCommand(query, sqlConnection);
+                cmd.Parameters.AddWithValue("@MaSV", textBox4.Text);
+                cmd.Parameters.AddWithValue("@NoiSinh", comboBox2.Text);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                dataGridView1.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lọc dữ liệu: " + ex.Message);
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
         }
     }
+}

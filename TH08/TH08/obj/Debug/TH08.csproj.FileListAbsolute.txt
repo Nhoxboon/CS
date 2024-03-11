@@ -1,0 +1,10 @@
+E:\StudyCS\TH08\TH08\obj\Debug\TH08.csproj.AssemblyReference.cache
+E:\StudyCS\TH08\TH08\obj\Debug\TH08.Form1.resources
+E:\StudyCS\TH08\TH08\obj\Debug\TH08.Properties.Resources.resources
+E:\StudyCS\TH08\TH08\obj\Debug\TH08.csproj.GenerateResource.cache
+E:\StudyCS\TH08\TH08\obj\Debug\TH08.csproj.CoreCompileInputs.cache
+E:\StudyCS\TH08\TH08\bin\Debug\TH08.exe.config
+E:\StudyCS\TH08\TH08\bin\Debug\TH08.exe
+E:\StudyCS\TH08\TH08\bin\Debug\TH08.pdb
+E:\StudyCS\TH08\TH08\obj\Debug\TH08.exe
+E:\StudyCS\TH08\TH08\obj\Debug\TH08.pdb
