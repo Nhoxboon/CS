@@ -13,7 +13,7 @@ namespace TH08
 {
     public partial class Form1 : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-7EEJR3H;Initial Catalog=Test1;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-GLH3U47;Initial Catalog=Test1;Integrated Security=True");
         
         public Form1()
         {
@@ -54,44 +54,16 @@ namespace TH08
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                label1.Text = row.Cells["MaSV"].Value.ToString();
-                label2.Text = row.Cells["HoTen"].Value.ToString();
-
-                label3.Value = Convert.ToDateTime(row.Cells["NgaySinh"].Value);
-                label4.Text = row.Cells["NoiSinh"].Value.ToString();
-                label5.Checked = Convert.ToBoolean(row.Cells["GioiTinh"].Value);
+                textBox4.Text = row.Cells["MaSV"].Value.ToString();
+                textBox3.Text = row.Cells["HoTen"].Value.ToString();
+                dateTimePicker2.Value = Convert.ToDateTime(row.Cells["NgaySinh"].Value);
+                string noiSinh = row.Cells["NoiSinh"].Value.ToString();
+                comboBox2.SelectedItem = noiSinh;
+                radioButton3.Checked = Convert.ToBoolean(row.Cells["GioiTinh"].Value);
+                radioButton4.Checked = !Convert.ToBoolean(row.Cells["GioiTinh"].Value);
             }
         }
 
-        //Thêm
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
-
-        //Sửa
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //Xóa
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //Lọc
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        
     }
-}
