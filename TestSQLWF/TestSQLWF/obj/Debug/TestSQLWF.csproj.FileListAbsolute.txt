@@ -1,0 +1,10 @@
+D:\StudyCS\TestSQLWF\TestSQLWF\bin\Debug\TestSQLWF.exe.config
+D:\StudyCS\TestSQLWF\TestSQLWF\bin\Debug\TestSQLWF.exe
+D:\StudyCS\TestSQLWF\TestSQLWF\bin\Debug\TestSQLWF.pdb
+D:\StudyCS\TestSQLWF\TestSQLWF\obj\Debug\TestSQLWF.csproj.AssemblyReference.cache
+D:\StudyCS\TestSQLWF\TestSQLWF\obj\Debug\TestSQLWF.Form1.resources
+D:\StudyCS\TestSQLWF\TestSQLWF\obj\Debug\TestSQLWF.Properties.Resources.resources
+D:\StudyCS\TestSQLWF\TestSQLWF\obj\Debug\TestSQLWF.csproj.GenerateResource.cache
+D:\StudyCS\TestSQLWF\TestSQLWF\obj\Debug\TestSQLWF.csproj.CoreCompileInputs.cache
+D:\StudyCS\TestSQLWF\TestSQLWF\obj\Debug\TestSQLWF.exe
+D:\StudyCS\TestSQLWF\TestSQLWF\obj\Debug\TestSQLWF.pdb
