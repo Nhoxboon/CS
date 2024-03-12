@@ -13,7 +13,7 @@ namespace TH8._3
 {
     public partial class Form1 : Form
     {
-        SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-7EEJR3H;Initial Catalog=QuanLyBH;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-GLH3U47;Initial Catalog=QuanLyBH;Integrated Security=True");
         public Form1()
         {
             InitializeComponent();
@@ -50,11 +50,17 @@ namespace TH8._3
 
         private int InsertData()
         {
+            
             sqlConnection.Open();
-            string query = "INSERT INTO DONHANG (STT, MaDon, TenHang, SoLuong, DonGia, ThanhTien) VALUES (6, 6, '"+txtTHang.Text+"', 2, 255, 500)";
+            string query = "INSERT INTO DONHANG (STT, TenKH, TenHang, SoLuong, DonGia, ThanhTien) VALUES (@STT, @TenKH, @TenHang, @SoLuong, @DonGia, @ThanhTien)";
             SqlCommand command = new SqlCommand(query, sqlConnection);
-            
-            
+            command.Parameters.AddWithValue("@STT", dataGridView1.Rows.Count + 1);
+            command.Parameters.AddWithValue("@TenKH", txtKH.Text);
+            command.Parameters.AddWithValue("@TenHang", txtTHang.Text);
+            command.Parameters.AddWithValue("@SoLuong", nbSLuong.Text);
+            command.Parameters.AddWithValue("@DonGia", txtDGia.Text);
+            command.Parameters.AddWithValue("@ThanhTien", txtTTien.Text);
+
             int row = command.ExecuteNonQuery();
             sqlConnection.Close();
             return row;
@@ -62,10 +68,11 @@ namespace TH8._3
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtTHang.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            nbSLuong.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtDGia.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtTTien.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtKH.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtTHang.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            nbSLuong.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtDGia.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtTTien.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -79,6 +86,7 @@ namespace TH8._3
             txtDGia.Text = txtTHang.SelectedValue.ToString();
         }
 
+        //Thêm
         private void button3_Click(object sender, EventArgs e)
         {
              int check = InsertData();
