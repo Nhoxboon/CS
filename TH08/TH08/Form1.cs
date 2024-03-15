@@ -19,6 +19,8 @@ namespace TH08
         {
             InitializeComponent();
             Console.OutputEncoding = Encoding.Unicode;
+            LoadData();
+            LoadDataComboBox();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -29,28 +31,34 @@ namespace TH08
 
         private void LoadData()
         {
-            try
-            {
-                sqlConnection.Open();
-                string query = "SELECT * FROM SinhVien";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection);
-                DataTable dataTable = new DataTable();
-                adapter.Fill(dataTable);
-                dataGridView1.DataSource = dataTable;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
-            }
-            finally
+            if (sqlConnection.State == ConnectionState.Open)
             {
                 sqlConnection.Close();
             }
+            sqlConnection.Open();
+            string query = "SELECT * FROM SinhVien";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            dataGridView1.DataSource = dataTable;
+            sqlConnection.Close();
+            
+        }
+        private void LoadDataComboBox()
+        {
+            sqlConnection.Open();
+            string query = "SELECT * FROM TinhThanh";
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+            SqlDataReader dataReader = command.ExecuteReader();
+            DataTable dataTable = new DataTable();
+            dataTable.Load(dataReader);
+            comboBox2.DataSource = dataTable;
+            comboBox2.DisplayMember = "NoiSinh";
+            sqlConnection.Close();
         }
 
         private void dataGridViewSinhVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Hiển thị dữ liệu tại dòng đang chọn lên các Controls tương ứng
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
@@ -59,16 +67,16 @@ namespace TH08
                 dateTimePicker2.Value = Convert.ToDateTime(row.Cells["NgaySinh"].Value);
                 string noiSinh = row.Cells["NoiSinh"].Value.ToString();
                 comboBox2.SelectedItem = noiSinh;
-                radioButton3.Checked = Convert.ToBoolean(row.Cells["GioiTinh"].Value);
-                radioButton4.Checked = !Convert.ToBoolean(row.Cells["GioiTinh"].Value);
+                radioButton4.Checked = Convert.ToBoolean(row.Cells["GioiTinh"].Value);
+                
             }
         }
+
 
         //Thêm
         private void button8_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 sqlConnection.Open();
                 string query = "INSERT INTO SinhVien (MaSV, HoTen, NgaySinh, NoiSinh, GioiTinh) VALUES (@MaSV, @HoTen, @NgaySinh, @NoiSinh, @GioiTinh)";
                 SqlCommand cmd = new SqlCommand(query, sqlConnection);
@@ -76,21 +84,11 @@ namespace TH08
                 cmd.Parameters.AddWithValue("@HoTen", textBox3.Text);
                 cmd.Parameters.AddWithValue("@NgaySinh", dateTimePicker2.Value);
                 cmd.Parameters.AddWithValue("@NoiSinh", comboBox2.Text);
-                cmd.Parameters.AddWithValue("@GioiTinh", radioButton3.Checked);
-                
-
+                cmd.Parameters.AddWithValue("@GioiTinh", radioButton4.Checked);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Thêm thành công!");
                 LoadData();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
-            }
-            finally
-            {
                 sqlConnection.Close();
-            }
         }
 
         //Sửa
@@ -107,7 +105,7 @@ namespace TH08
                     cmd.Parameters.AddWithValue("@HoTen", textBox3.Text);
                     cmd.Parameters.AddWithValue("@NgaySinh", dateTimePicker2.Value);
                     cmd.Parameters.AddWithValue("@NoiSinh", comboBox2.Text);
-                    cmd.Parameters.AddWithValue("@GioiTinh", radioButton3.Checked);
+                    cmd.Parameters.AddWithValue("@GioiTinh", radioButton4.Checked);
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Sửa thành công!");
@@ -131,7 +129,6 @@ namespace TH08
         //Xóa
         private void button6_Click(object sender, EventArgs e)
         {
-            // Xóa dòng dữ liệu đang chọn
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 try
@@ -185,6 +182,12 @@ namespace TH08
             {
                 sqlConnection.Close();
             }
+        }
+
+        //Dành cho cả 2 radio button
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            radioButton3.Checked = !radioButton4.Checked;
         }
     }
 }
