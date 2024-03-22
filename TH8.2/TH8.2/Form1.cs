@@ -59,7 +59,7 @@ namespace TH8._2
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadFilm();
+            label4.Text = comboBox1.Text;
         }
 
         private void SeatA_Click(object sender, EventArgs e)
@@ -211,6 +211,7 @@ namespace TH8._2
                 if (result == DialogResult.Yes)
                 {
                     label5.Text = "0";
+
                 }
             }
         }

@@ -13,7 +13,7 @@ namespace TH08
 {
     public partial class Form1 : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-GLH3U47;Initial Catalog=QuanLySinhVienDB;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-7EEJR3H;Initial Catalog=QuanLySinhVienDB;Integrated Security=True");
         
         public Form1()
         {
@@ -31,6 +31,7 @@ namespace TH08
 
         private void LoadData()
         {
+            dataGridView1.Rows.Clear();
             if (sqlConnection.State == ConnectionState.Open)
             {
                 sqlConnection.Close();
