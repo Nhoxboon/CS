@@ -8,3 +8,4 @@ E:\StudyCS\TH9.1\TH9.1\obj\Debug\TH9.1.csproj.GenerateResource.cache
 E:\StudyCS\TH9.1\TH9.1\obj\Debug\TH9.1.csproj.CoreCompileInputs.cache
 E:\StudyCS\TH9.1\TH9.1\obj\Debug\TH9.1.exe
 E:\StudyCS\TH9.1\TH9.1\obj\Debug\TH9.1.pdb
+E:\StudyCS\TH9.1\TH9.1\obj\Debug\TH9._1.Form2.resources

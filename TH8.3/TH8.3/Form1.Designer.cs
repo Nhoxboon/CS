@@ -94,7 +94,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKH.ContextMenuStrip = this.contextMenuStrip1;
             this.txtKH.Location = new System.Drawing.Point(69, 54);
-            this.txtKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKH.Margin = new System.Windows.Forms.Padding(2);
             this.txtKH.Name = "txtKH";
             this.txtKH.Size = new System.Drawing.Size(131, 20);
             this.txtKH.TabIndex = 1;
@@ -107,7 +107,7 @@
             this.txtDGia.ContextMenuStrip = this.contextMenuStrip1;
             this.txtDGia.Enabled = false;
             this.txtDGia.Location = new System.Drawing.Point(69, 192);
-            this.txtDGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDGia.Margin = new System.Windows.Forms.Padding(2);
             this.txtDGia.Name = "txtDGia";
             this.txtDGia.ReadOnly = true;
             this.txtDGia.Size = new System.Drawing.Size(131, 20);
@@ -170,7 +170,7 @@
             "Bom",
             "Tẩy"});
             this.txtTHang.Location = new System.Drawing.Point(69, 97);
-            this.txtTHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTHang.Margin = new System.Windows.Forms.Padding(2);
             this.txtTHang.Name = "txtTHang";
             this.txtTHang.Size = new System.Drawing.Size(131, 21);
             this.txtTHang.TabIndex = 7;
@@ -180,7 +180,7 @@
             // 
             this.nbSLuong.ContextMenuStrip = this.contextMenuStrip1;
             this.nbSLuong.Location = new System.Drawing.Point(69, 149);
-            this.nbSLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nbSLuong.Margin = new System.Windows.Forms.Padding(2);
             this.nbSLuong.Name = "nbSLuong";
             this.nbSLuong.Size = new System.Drawing.Size(52, 20);
             this.nbSLuong.TabIndex = 8;
@@ -193,7 +193,7 @@
             this.txtTTien.ContextMenuStrip = this.contextMenuStrip1;
             this.txtTTien.Enabled = false;
             this.txtTTien.Location = new System.Drawing.Point(69, 304);
-            this.txtTTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTTien.Margin = new System.Windows.Forms.Padding(2);
             this.txtTTien.Name = "txtTTien";
             this.txtTTien.ReadOnly = true;
             this.txtTTien.Size = new System.Drawing.Size(131, 20);
@@ -205,7 +205,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(2, 1);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -239,7 +239,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button4.ContextMenuStrip = this.contextMenuStrip1;
             this.button4.Location = new System.Drawing.Point(205, 150);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(31, 24);
             this.button4.TabIndex = 13;
@@ -252,7 +252,7 @@
             this.btThem.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btThem.ContextMenuStrip = this.contextMenuStrip1;
             this.btThem.Location = new System.Drawing.Point(205, 70);
-            this.btThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btThem.Margin = new System.Windows.Forms.Padding(2);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(32, 28);
             this.btThem.TabIndex = 12;
@@ -265,7 +265,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button2.ContextMenuStrip = this.contextMenuStrip1;
             this.button2.Location = new System.Drawing.Point(69, 240);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 30);
             this.button2.TabIndex = 11;
@@ -278,7 +278,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.ContextMenuStrip = this.contextMenuStrip1;
             this.button1.Location = new System.Drawing.Point(69, 9);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 30);
             this.button1.TabIndex = 10;
@@ -301,7 +301,7 @@
             this.Column5});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -351,7 +351,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 441);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Quản lý bán hàng (Tống Quang Bách - 2251172163)";
             this.Load += new System.EventHandler(this.Form1_Load);

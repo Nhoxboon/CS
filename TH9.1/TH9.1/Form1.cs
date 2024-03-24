@@ -82,7 +82,7 @@ namespace TH9._1
             dateTimePicker2.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
         }
 
-        //Mượn truyện
+        //Trả truyện
         private void button2_Click(object sender, EventArgs e)
         {
             dataGridView1.CurrentRow.Cells[5].Value = dateTimePicker2.Text;
