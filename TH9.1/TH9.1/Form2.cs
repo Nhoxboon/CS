@@ -20,6 +20,7 @@ namespace TH9._1
         {
             InitializeComponent();
             Console.OutputEncoding = Encoding.Unicode;
+            dataGridView1.Columns.Clear();
             LoadData();
         }
 
@@ -65,7 +66,6 @@ namespace TH9._1
 
         private void LoadData()
         {
-            dataGridView1.Columns.Clear();
             if(sqlConnection.State == ConnectionState.Open) 
             {
                 sqlConnection.Close();
