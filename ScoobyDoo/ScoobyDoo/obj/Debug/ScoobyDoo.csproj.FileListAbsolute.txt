@@ -1,0 +1,11 @@
+D:\StudyCS\ScoobyDoo\ScoobyDoo\bin\Debug\ScoobyDoo.exe.config
+D:\StudyCS\ScoobyDoo\ScoobyDoo\bin\Debug\ScoobyDoo.exe
+D:\StudyCS\ScoobyDoo\ScoobyDoo\bin\Debug\ScoobyDoo.pdb
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.csproj.AssemblyReference.cache
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Form1.resources
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Properties.Resources.resources
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.csproj.GenerateResource.cache
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.csproj.CoreCompileInputs.cache
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.exe
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.pdb
+D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Form2.resources
