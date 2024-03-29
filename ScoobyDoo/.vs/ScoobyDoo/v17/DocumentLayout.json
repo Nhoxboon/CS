@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\StudyCS\\ScoobyDoo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|E:\\StudyCS\\ScoobyDoo\\scoobydoo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|solutionrelative:scoobydoo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|e:\\studycs\\scoobydoo\\scoobydoo\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|solutionrelative:scoobydoo\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|E:\\StudyCS\\ScoobyDoo\\scoobydoo\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|solutionrelative:scoobydoo\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|E:\\StudyCS\\ScoobyDoo\\scoobydoo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|solutionrelative:scoobydoo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBDE5131-F861-4771-A072-DE3DCEE15529}|ScoobyDoo\\ScoobyDoo.csproj|E:\\StudyCS\\ScoobyDoo\\scoobydoo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form3.cs",
               "DocumentMoniker": "E:\\StudyCS\\ScoobyDoo\\ScoobyDoo\\Form3.cs",
               "RelativeDocumentMoniker": "ScoobyDoo\\Form3.cs",
@@ -59,25 +59,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "E:\\StudyCS\\ScoobyDoo\\ScoobyDoo\\Form3.cs",
               "RelativeDocumentMoniker": "ScoobyDoo\\Form3.cs",
               "ToolTip": "E:\\StudyCS\\ScoobyDoo\\ScoobyDoo\\Form3.cs [Design]",
               "RelativeToolTip": "ScoobyDoo\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:47:22.422Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-28T13:47:22.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form2.cs",
               "DocumentMoniker": "E:\\StudyCS\\ScoobyDoo\\ScoobyDoo\\Form2.cs",
               "RelativeDocumentMoniker": "ScoobyDoo\\Form2.cs",
               "ToolTip": "E:\\StudyCS\\ScoobyDoo\\ScoobyDoo\\Form2.cs",
               "RelativeToolTip": "ScoobyDoo\\Form2.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAQwFQAAABLAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAFQAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T01:44:39.757Z",
               "EditorCaption": ""
@@ -104,8 +103,7 @@
               "RelativeToolTip": "ScoobyDoo\\Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T01:44:39.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T01:44:39.899Z"
             },
             {
               "$type": "Document",
@@ -116,8 +114,7 @@
               "ToolTip": "E:\\StudyCS\\ScoobyDoo\\ScoobyDoo\\Form1.cs [Design]",
               "RelativeToolTip": "ScoobyDoo\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T01:44:39.9Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-27T01:44:39.9Z"
             }
           ]
         }
