@@ -78,67 +78,17 @@ namespace ScoobyDoo
             }
         }
 
-
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count > 0 && dataGridView1.Rows[dataGridView1.Rows.Count - 1].IsNewRow)
+            try
             {
-                dataGridView1.EndEdit();
-
-                sqlConnection.Open();
-
-                // Tạo và thiết lập câu lệnh SQL
-                string insertQuery = "INSERT INTO Khoa(MaKhoa, TenKhoa) VALUES (@MaKhoa, @TenKhoa)";
-
-                // Thực thi câu lệnh SQL cho mỗi hàng mới trong DataGridView
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    if (!row.IsNewRow)
-                    {
-                        // Lấy giá trị của cột MaKhoa và TenKhoa từ DataGridView
-                        string maKhoa = Convert.ToString(row.Cells["MaKhoa"].Value);
-                        string tenKhoa = Convert.ToString(row.Cells["TenKhoa"].Value);
-
-                        // Kiểm tra xem MaKhoa đã tồn tại trong cơ sở dữ liệu chưa
-                        string checkQuery = "SELECT COUNT(*) FROM Khoa WHERE MaKhoa = @MaKhoa";
-                        SqlCommand checkCmd = new SqlCommand(checkQuery, sqlConnection);
-                        checkCmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
-                        int count = Convert.ToInt32(checkCmd.ExecuteScalar());
-
-                        // Nếu MaKhoa chưa tồn tại, thêm mới dữ liệu vào cơ sở dữ liệu
-                        if (count == 0)
-                        {
-                            SqlCommand insertCmd = new SqlCommand(insertQuery, sqlConnection);
-                            insertCmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
-                            insertCmd.Parameters.AddWithValue("@TenKhoa", tenKhoa);
-                            insertCmd.ExecuteNonQuery();
-                        }
-                    }
-                }
-
-                sqlConnection.Close();
+                SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+                adapter.Update(dataset.Tables[0]);
+                MessageBox.Show("Lưu thành công");
             }
-
-            // Kiểm tra xem có hàng được xóa không
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            catch (Exception ex)
             {
-                if (row.IsNewRow) continue; // Bỏ qua hàng mới
-
-                if (row.Cells["MaKhoa"].Value == null && row.Cells["TenKhoa"].Value == null)
-                {
-                    string maKhoa = Convert.ToString(row.Cells["MaKhoa"].Value);
-
-                    string deleteQuery = "DELETE FROM Khoa WHERE MaKhoa = @MaKhoa";
-
-                    sqlConnection.Open();
-
-                    // Thực thi câu lệnh SQL để xóa dữ liệu
-                    SqlCommand deleteCmd = new SqlCommand(deleteQuery, sqlConnection);
-                    deleteCmd.Parameters.AddWithValue("@MaKhoa", maKhoa);
-                    deleteCmd.ExecuteNonQuery();
-
-                    sqlConnection.Close();
-                }
+                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
 
