@@ -9,3 +9,15 @@ D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.csproj.CoreCompileInputs.cach
 D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.exe
 D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.pdb
 D:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Form2.resources
+E:\StudyCS\ScoobyDoo\ScoobyDoo\bin\Debug\ScoobyDoo.exe.config
+E:\StudyCS\ScoobyDoo\ScoobyDoo\bin\Debug\ScoobyDoo.exe
+E:\StudyCS\ScoobyDoo\ScoobyDoo\bin\Debug\ScoobyDoo.pdb
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.csproj.AssemblyReference.cache
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Form1.resources
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Form2.resources
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Properties.Resources.resources
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.csproj.GenerateResource.cache
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.csproj.CoreCompileInputs.cache
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.exe
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.pdb
+E:\StudyCS\ScoobyDoo\ScoobyDoo\obj\Debug\ScoobyDoo.Form3.resources

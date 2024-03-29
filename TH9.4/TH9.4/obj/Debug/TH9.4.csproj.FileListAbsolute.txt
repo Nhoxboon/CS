@@ -1,0 +1,10 @@
+E:\StudyCS\TH9.4\TH9.4\bin\Debug\TH9.4.exe.config
+E:\StudyCS\TH9.4\TH9.4\bin\Debug\TH9.4.exe
+E:\StudyCS\TH9.4\TH9.4\bin\Debug\TH9.4.pdb
+E:\StudyCS\TH9.4\TH9.4\obj\Debug\TH9.4.csproj.AssemblyReference.cache
+E:\StudyCS\TH9.4\TH9.4\obj\Debug\TH9._4.Form1.resources
+E:\StudyCS\TH9.4\TH9.4\obj\Debug\TH9._4.Properties.Resources.resources
+E:\StudyCS\TH9.4\TH9.4\obj\Debug\TH9.4.csproj.GenerateResource.cache
+E:\StudyCS\TH9.4\TH9.4\obj\Debug\TH9.4.csproj.CoreCompileInputs.cache
+E:\StudyCS\TH9.4\TH9.4\obj\Debug\TH9.4.exe
+E:\StudyCS\TH9.4\TH9.4\obj\Debug\TH9.4.pdb
