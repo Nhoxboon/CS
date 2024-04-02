@@ -131,7 +131,7 @@ namespace TH9._4
                 sql.Open();
                 string query = "Delete From ThongTin Where @Soban = Soban";
                 cmd = new SqlCommand(query, sql);
-                cmd.Parameters.AddWithValue("@Soban", comboBox1.Text);
+                cmd.Parameters.AddWithValue("@Soban", dataGridView1.CurrentRow.Cells[0].Value);
                 cmd.ExecuteNonQuery();
                 LoadData();
             }

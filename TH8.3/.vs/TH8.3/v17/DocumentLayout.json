@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\StudyCS\\TH8.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3608A429-AACA-4B05-9125-21A0221DFBA7}|TH8.3\\TH8.3.csproj|e:\\studycs\\th8.3\\th8.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3608A429-AACA-4B05-9125-21A0221DFBA7}|TH8.3\\TH8.3.csproj|solutionrelative:th8.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3608A429-AACA-4B05-9125-21A0221DFBA7}|TH8.3\\TH8.3.csproj|E:\\StudyCS\\TH8.3\\th8.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3608A429-AACA-4B05-9125-21A0221DFBA7}|TH8.3\\TH8.3.csproj|solutionrelative:th8.3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\StudyCS\\TH8.3\\TH8.3\\Form1.cs",
+              "RelativeDocumentMoniker": "TH8.3\\Form1.cs",
+              "ToolTip": "E:\\StudyCS\\TH8.3\\TH8.3\\Form1.cs",
+              "RelativeToolTip": "TH8.3\\Form1.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAYwH0AAACtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:52:47.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\StudyCS\\TH8.3\\TH8.3\\Form1.cs",
+              "RelativeDocumentMoniker": "TH8.3\\Form1.cs",
+              "ToolTip": "E:\\StudyCS\\TH8.3\\TH8.3\\Form1.cs [Design]",
+              "RelativeToolTip": "TH8.3\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:58:07.591Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

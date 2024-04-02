@@ -13,7 +13,7 @@ namespace TH8._3
 {
     public partial class Form1 : Form
     {
-        SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-7EEJR3H;Initial Catalog=QuanLyBH;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-GLH3U47;Initial Catalog=QuanLyBH;Integrated Security=True");
         public Form1()
         {
             InitializeComponent();
@@ -52,7 +52,7 @@ namespace TH8._3
             sqlConnection.Close();
         }
 
-        private int InsertData( string tenK, string tenH, string SL, string DGia, string TTien, int mDH)
+        private void InsertData(int mDH, string tenK, string tenH, string SL, string DGia, string TTien)
         {
             
             sqlConnection.Open();
@@ -65,18 +65,16 @@ namespace TH8._3
             command.Parameters.AddWithValue("@DonGia", DGia);
             command.Parameters.AddWithValue("@ThanhTien", TTien);
             
-            int row = command.ExecuteNonQuery();
+            command.ExecuteNonQuery();
             sqlConnection.Close();
-            return row;
+            //return row;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            /*txtKH.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtTHang.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            nbSLuong.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtDGia.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtTTien.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();*/
+            txtTHang.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            nbSLuong.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtDGia.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,7 +83,7 @@ namespace TH8._3
             txtDGia.Text = "";
             txtKH.Text = "";
             txtTTien.Text = "";
-            nbSLuong.Text = "";
+            nbSLuong.Value = 0;
             txtTHang.Text = "";
             dataGridView1.Rows.Clear();
         }
@@ -131,19 +129,22 @@ namespace TH8._3
         //Xóa
         private void button4_Click(object sender, EventArgs e)
         {
-           /* sqlConnection.Open();
-            string query = "DELETE FROM DONHANG WHERE STT = @STT";
-            SqlCommand command = new SqlCommand(query, sqlConnection);
-            command.Parameters.AddWithValue("@STT", dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-            int row = command.ExecuteNonQuery();
-            if(row > 0)
-            {
-                MessageBox.Show("Xóa dữ liệu thành công");
-                LoadData();
-            }
-            sqlConnection.Close();*/
+            /* sqlConnection.Open();
+             string query = "DELETE FROM DONHANG WHERE STT = @STT";
+             SqlCommand command = new SqlCommand(query, sqlConnection);
+             command.Parameters.AddWithValue("@STT", dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+             int row = command.ExecuteNonQuery();
+             if(row > 0)
+             {
+                 MessageBox.Show("Xóa dữ liệu thành công");
+                 LoadData();
+             }
+             sqlConnection.Close();*/
+            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
         }
         int flag = 1;
+
+        //Tính tổng tiền
         private void button2_Click(object sender, EventArgs e)
         {
             double Tong = 0;
@@ -153,7 +154,7 @@ namespace TH8._3
                 {
                     Tong += double.Parse(row.Cells[4].Value.ToString());
                 }
-                InsertData(txtKH.Text , row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[4].Value.ToString(), flag);
+                InsertData(flag, txtKH.Text , row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), row.Cells[3].Value.ToString(), row.Cells[4].Value.ToString());
             }
             txtTTien.Text = Tong.ToString();
             
